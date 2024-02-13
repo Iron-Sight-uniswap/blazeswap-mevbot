@@ -1,7 +1,7 @@
 {
-  "name": "@blazeswap/sdk",
+  "name": "blazeswap-sdk",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🛠 An SDK for building applications on top of Blazeswap",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -54,5 +54,8 @@
     "printWidth": 120,
     "semi": false,
     "singleQuote": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
