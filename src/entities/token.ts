@@ -66,6 +66,14 @@ export function currencyEquals(currencyA: Currency, currencyB: Currency): boolea
 }
 
 export const WETH = {
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    '0x4300000000000000000000000000000000000004',
+    18,
+    'WETH',
+    'Wrapped ETH',
+    'https://www.ethereum.org'
+  ),
   [ChainId.TESTNET]: new Token(
     ChainId.TESTNET,
     '0x4200000000000000000000000000000000000023',
@@ -73,5 +81,24 @@ export const WETH = {
     'WETH',
     'Wrapped ETH',
     'https://www.ethereum.org'
+  )
+}
+
+export const USDB = {
+  [ChainId.MAINNET]: new Token(
+    ChainId.MAINNET,
+    '0x4300000000000000000000000000000000000003',
+    18,
+    'USDB',
+    'USDB',
+    'https://blast.io'
+  ),
+  [ChainId.TESTNET]: new Token(
+    ChainId.TESTNET,
+    '0x4200000000000000000000000000000000000022',
+    18,
+    'USDB',
+    'USDB',
+    'https://blast.io'
   )
 }
